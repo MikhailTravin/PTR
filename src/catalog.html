@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Каталог"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<div class="breadcrambs__content">
+							<ul>
+								<li><a href="#">Главная<span class="_icon-arrow"></span></a></li>
+								<li><span>Каталог</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page__catalog catalog">
+					<div class="catalog__top">
+						<div class="catalog__menu">
+							<h1>Мужская одежда</h1>
+							<div class="catalog__icons _icon-filter"></div>
+							<div class="catalog__filter filter-catalog">
+								<div class="filter-catalog__close _icon-close"></div>
+								<div class="filter-catalog__title">Фильтр</div>
+								<div class="filter-catalog__options options-filter-catalog">
+									<div class="options-filter-catalog__item">
+										<input checked hidden id="o_1" class="options-filter-catalog__input" type="radio" value="1" name="option">
+										<label for="o_1" class="options-filter-catalog__label">
+											<div class="options-filter-catalog__icon"></div>
+											<span class="options-filter-catalog__text">По новизне</span>
+										</label>
+									</div>
+									<div class="options-filter-catalog__item">
+										<input hidden id="o_2" class="options-filter-catalog__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options-filter-catalog__label">
+											<div class="options-filter-catalog__icon"></div>
+											<span class="options-filter-catalog__text">По возрастанию цены</span>
+										</label>
+									</div>
+									<div class="options-filter-catalog__item">
+										<input hidden id="o_3" class="options-filter-catalog__input" type="radio" value="2" name="option">
+										<label for="o_3" class="options-filter-catalog__label">
+											<div class="options-filter-catalog__icon"></div>
+											<span class="options-filter-catalog__text">По убыванию цены</span>
+										</label>
+									</div>
+									<div class="options-filter-catalog__item">
+										<input hidden id="o_4" class="options-filter-catalog__input" type="radio" value="2" name="option">
+										<label for="o_4" class="options-filter-catalog__label">
+											<div class="options-filter-catalog__icon"></div>
+											<span class="options-filter-catalog__text">По популярности</span>
+										</label>
+									</div>
+								</div>
+								<div class="filter-catalog__body">
+									<div class="filter-catalog__column">
+										<div class="filter-catalog__select select">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__count">0</div>
+													<div class="select__btntext">
+														Цвет
+													</div>
+													<div class="select__icon _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<div class="select__close _icon-close"></div>
+													<div class="select__title">Цвет</div>
+													<ul class="select__options">
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																Красный
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																Оранжевый
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																Желтый
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-catalog__column">
+										<div class="filter-catalog__select select">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__count">0</div>
+													<div class="select__btntext">
+														Пол
+													</div>
+													<div class="select__icon _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<div class="select__close _icon-close"></div>
+													<div class="select__title">Пол</div>
+													<ul class="select__options">
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																М
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																Ж
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-catalog__column">
+										<div class="filter-catalog__select select">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__count">0</div>
+													<div class="select__btntext">
+														Размер
+													</div>
+													<div class="select__icon _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<div class="select__close _icon-close"></div>
+													<div class="select__title">Размер одежды</div>
+													<ul class="select__options">
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																S
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																M
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																L
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																XL
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																XXL
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-catalog__column">
+										<div class="filter-catalog__select select">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__count">0</div>
+													<div class="select__btntext">
+														Цена
+													</div>
+													<div class="select__icon _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<div class="select__close _icon-close"></div>
+													<div class="select__title">Цена</div>
+													<div class="select__options">
+														<div class="select__inputs">
+															<div class="select__input">
+																<div class="select__placeholder">от 900</div>
+																<input id="price-from" onkeypress='return event.charCode>= 48 && event.charCode <= 57;' autocomplete="off" type="text" name="form[]">
+															</div>
+															<span></span>
+															<div class="select__input">
+																<div class="select__placeholder">до 1900</div>
+																<input id="price-to" onkeypress='return event.charCode>= 48 && event.charCode <= 57;' autocomplete="off" type="text" name="form[]">
+															</div>
+														</div>
+														<div class="select__button button">Применить</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-catalog__column select-other">
+										<div class="filter-catalog__select select select-other">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext btntext-other">
+														По умолчанию
+													</div>
+													<div class="select__icon _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<ul class="select__options">
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																По умолчанию
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																По новизне
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																По возрастанию цены
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																По убыванию цены
+															</div>
+														</li>
+														<li class="select__option">
+															<div class="select__option-text">
+																<span class="_icon-check"></span>
+																По популярности
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-catalog__buttons">
+									<div class="filter-catalog__remove button">Сбросить</div>
+									<div class="filter-catalog__show button">Показать</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__container">
+						<div class="catalog__content">
+							<div class="catalog__main-product">
+								<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+									<div class="product-card__images">
+										<a href="#" class="product-card__tabs">
+											<span class="product-card__items">
+												<span class="product-card__item _active">
+													<span class="product-card__item-nav"></span>
+													<img src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+													<div class="product-card__text">Скидка</div>
+												</span>
+												<span class="product-card__item">
+													<span class="product-card__item-nav"></span>
+													<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													<div class="product-card__text">Скидка</div>
+												</span>
+											</span>
+										</a>
+										<div class="product-card__slides">
+											<div class="product-card__slider swiper">
+												<div class="product-card__wrapper swiper-wrapper">
+													<div class="product-card__slide swiper-slide">
+														<a href="#" class="product-card__image">
+															<img src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+															<div class="product-card__text">Топ</div>
+														</a>
+													</div>
+													<div class="product-card__slide swiper-slide">
+														<a href="#" class="product-card__image">
+															<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															<div class="product-card__text">Топ</div>
+														</a>
+													</div>
+												</div>
+												<div class="product-card__dotts"></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__desc">
+										<a href="#" class="product-card__title">
+											<p itemprop="name">Утепленный жилет с воротником</p>
+											<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+												<span itemprop="price">25 000</span>
+												<span itemprop="priceCurrency">Р</span>
+												<s>75 000 р</s>
+											</p>
+										</a>
+										<div class="product-card__favourites">
+											<div class="product-card__favourites-icon _icon-favourites"></div>
+											<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__products products">
+								<div class="products__body">
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__main-product">
+								<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+									<div class="product-card__images">
+										<a href="#" class="product-card__tabs">
+											<span class="product-card__items">
+												<span class="product-card__item _active">
+													<span class="product-card__item-nav product-card-nav-hidden"></span>
+													<img src="../img/image-12.webp" srcset="../img/image-12.webp 1x, ../img/image-12@2x.webp 2x" alt>
+													<div class="product-card__text">Топ</div>
+												</span>
+											</span>
+										</a>
+										<div class="product-card__slides">
+											<div class="product-card__slider swiper">
+												<div class="product-card__wrapper swiper-wrapper">
+													<div class="product-card__slide swiper-slide">
+														<a href="#" class="product-card__image">
+															<img src="../img/image-12.webp" srcset="../img/image-12.webp 1x, ../img/image-12@2x.webp 2x" alt>
+														</a>
+													</div>
+												</div>
+												<div class="product-card__dotts"></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__desc">
+										<a href="#" class="product-card__title">
+											<p itemprop="name">Утепленный жилет с воротником</p>
+											<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+												<span itemprop="price">25 000</span>
+												<span itemprop="priceCurrency">Р</span>
+											</p>
+										</a>
+										<div class="product-card__favourites">
+											<div class="product-card__favourites-icon _icon-favourites"></div>
+											<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__products products">
+								<div class="products__body">
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-8.webp" srcset="../img/image-8.webp 1x, ../img/image-8@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-8.webp" srcset="../img/image-8.webp 1x, ../img/image-8@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-10.webp" srcset="../img/image-10.webp 1x, ../img/image-10@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-10.webp" srcset="../img/image-10.webp 1x, ../img/image-10@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__products products">
+								<div class="products__body">
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-4.webp" srcset="../img/image-4.webp 1x, ../img/image-4@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-8.webp" srcset="../img/image-8.webp 1x, ../img/image-8@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-8.webp" srcset="../img/image-8.webp 1x, ../img/image-8@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-10.webp" srcset="../img/image-10.webp 1x, ../img/image-10@2x.webp 2x" alt>
+													</span>
+													<span class="product-card__item">
+														<span class="product-card__item-nav"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-10.webp" srcset="../img/image-10.webp 1x, ../img/image-10@2x.webp 2x" alt>
+															</div>
+														</div>
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+									<div itemscope itemtype="https://schema.org/Product" class="products__column product-card">
+										<div class="product-card__images">
+											<a href="#" class="product-card__tabs">
+												<span class="product-card__items">
+													<span class="product-card__item _active">
+														<span class="product-card__item-nav product-card-nav-hidden"></span>
+														<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+													</span>
+												</span>
+											</a>
+											<div class="product-card__slides">
+												<div class="product-card__slider swiper">
+													<div class="product-card__wrapper swiper-wrapper">
+														<div class="product-card__slide swiper-slide">
+															<div class="product-card__image">
+																<img data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__dotts"></div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card__desc">
+											<a href="#" class="product-card__title">
+												<p itemprop="name">Пальто пуховое</p>
+												<p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+													<span itemprop="price">25 000</span>
+													<span itemprop="priceCurrency">Р</span>
+												</p>
+											</a>
+											<div class="product-card__favourites">
+												<div class="product-card__favourites-icon _icon-favourites"></div>
+												<div class="product-card__favourites-icon-bg _icon-favourites-bg"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
