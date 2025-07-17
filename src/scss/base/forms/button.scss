@@ -1,0 +1,23 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: math.div(35, 30);
+	color: $color_white;
+	padding: 12px;
+	background: transparent;
+	border: 1px solid $mainColor;
+	transition: all 0.3s ease 0s;
+	@media (max-width: $mobile) {
+		padding: 9px;
+		font-size: 25px;
+		line-height: math.div(29, 25);
+	}
+}
